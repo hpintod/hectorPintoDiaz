@@ -3,7 +3,7 @@ function enviarFormulario() {
 	var email = document.getElementById("email").value;
 	var telefono = document.getElementById("telefono").value;
 	var mensaje = document.getElementById("mensaje").value;
-	var acepto = document.getElementById("acepto").checked;
+	var politica = document.getElementById("politica-privacidad").checked;
 
 	if (nombre == "") {
 		alert("Escribe tu nombre.");
@@ -11,7 +11,7 @@ function enviarFormulario() {
 		alert("Escribe tu correo electrónico.");
 	} else if (mensaje == "") {
 		alert("Escribe un mensaje.");
-	} else if (acepto == false) {
+	} else if (politica == false) {
 		alert("Tienes que aceptar la politica de privacidad.");
 	} else {
 		alert("¡Mensaje enviado correctamente!");
